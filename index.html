@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-+J+JzvJZJzvJzvJzvJzvJzvJzvJzvJzvJzvJzvJzvJzvJzvJzvJzvJzvJzvJzvJzvJzvJzvJzvJzvJzvJzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I am a web developer with a passion for creating beautiful and functional websites.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi, my name is John Doe and I am a web developer based in New York City. I specialize in creating responsive and user-friendly websites using HTML, CSS, and JavaScript. I am passionate about creating beautiful and functional websites that provide a great user experience.</p>
+                    <p>When I'm not coding, you can find me exploring the city, trying out new restaurants, or playing basketball with friends.</p>
+                </div>
+                <div class="about-img">
+                    <img src="https://via.placeholder.com/400x400" alt="John Doe">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam vel tincidunt bibendum, velit sapien bibendum sapien, vel bibendum sapien sapien vel sapien.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam vel tincidunt bibendum, velit sapien bibendum sapien, vel bibendum sapien sapien vel sapien.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Project 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam vel tincidunt bibendum, velit sapien bibendum sapien, vel bibendum sapien sapien vel sapien.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <button id="contact-btn" class="btn">Get in Touch</button>
+            <div class="contact-modal">
+                <div class="contact-modal-content">
+                    <span class="contact-modal-close">&times;</span>
+                    <h3 class="modal-heading">Send me a message</h3>
+                    <form class="contact-modal-form" action="#" method="post">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <input type="submit" value="Send Message">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2021 My Portfolio. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script> 
+    <script>
+        $(document).ready(function() {
+          $('.form-group input, .form-group textarea').on('input', function() {
+            if ($(this).val().length > 0) {
+              $(this).addClass('has-value');
+            } else {
+              $(this).removeClass('has-value');
+            }
+          });
+        });
+      </script>  
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
